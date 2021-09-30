@@ -14,7 +14,7 @@ This repo contains two hooks called event2io and io2key: <br/>
 - **event2io_launcher.sh** runs event2io.py after activating a python env.
 - **exemple.py** shows how to use named pipe in the main code to communicate with event2io.
 ### logger:
-- **logger.py** logging singleton script that is used in even2io and io2key. The logs is stored in /var/log/cel-apus/
+- **logger.py** logging singleton script that is used in even2io and io2key. The logs is stored in `/var/log/cel-apus/`
 
 
 ## Setup
