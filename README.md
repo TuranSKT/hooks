@@ -76,7 +76,6 @@ If there is still an issue related to the x-server display when trying to enable
 ```
 xhost si:localuser:root
 ```
-Since Tanguy has strongly disapproved this method, do it in case of emergency
 
 ## Dependencies:
 ```
