@@ -1,0 +1,15 @@
+[Unit]
+Description=Starts the event2io.py as a daemon
+After=syslog.target
+
+[Service]
+ExecStart=/home/cellari/cel-apus/event2io/event2io_launcher.sh
+StandardOutput=syslog
+StandardError=syslog
+User=cellari
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

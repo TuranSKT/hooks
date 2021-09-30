@@ -1,0 +1,10 @@
+#input_key
+#
+#input_pin: pin to listen
+#keystroke: keystroke to trigger when input_pin has been detected
+#
+#Attention:
+#Multiple keystroke may be assigned to one pin
+pair_1:
+  input_pin: 15
+  keystroke: b

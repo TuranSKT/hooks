@@ -1,0 +1,48 @@
+# Output_key config file
+#
+# output_pin: pin number on which one may trigger one specific function using "mode"
+# event: type of device attached. For instance LED, MOTOR, etc.
+# mode: string that event2io will check to trigger a specific gpio related function
+# duration: duration of the event in seconds
+# trigger_msg: trigger the function specified in mode when this message has been sent from the main code
+#
+# Attention !
+# Duration is set to 0 by default for mode that doesn't require duration
+# Be aware of the mode's "name". Infact setting it to 'on' or 'off' prevents the event2io hook from working properly.
+# Multiple modes can be assigned to one specific output_pin
+
+pair_1:
+  output_pin: 35
+  event: LED
+  mode: constant_on
+  duration: 0
+  trigger_msg: polyp_detected
+
+
+pair_2:
+  output_pin: 35
+  event: LED
+  mode: constant_off
+  duration: 0
+  trigger_msg: polyp_not_detected
+
+pair_3:
+  output_pin: 35
+  event: LED
+  mode: simple_blink
+  duration: 2
+  trigger_msg: sys_ready
+
+pair_4:
+  output_pin: 35
+  event: LED
+  mode: fast_blink
+  duration: 300
+  trigger_msg: sys_shuting_down
+
+pair_5:
+  output_pin: 35
+  event: LED
+  mode: slow_blink
+  duration: 1.5
+  trigger_msg: sys_key_input
